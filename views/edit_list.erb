@@ -6,7 +6,7 @@
   <header>
 		<h2>Editing '<%= @current_list[:name] %>'</h2>
 		  <ul><li>
-		  	<form action="/lists/<%= params[:num] %>/delete" method="post">
+		  	<form action="/lists/<%= params[:num] %>/delete" method="post" class="delete">
 		  		<button type="submit" class="delete">Delete List</button>
 		    </form>
 		  </li></ul>
