@@ -20,7 +20,7 @@
   </header>
 	
 	<ul>
-		<% sorted_todos(@current_list[:todos]) do |todo| %>
+		<% sorted_todos(@todos) do |todo| %>
 			<% if todo[:completed] %>
 			 <li class="complete">
 			<% else %>

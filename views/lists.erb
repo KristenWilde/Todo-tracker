@@ -3,9 +3,9 @@
 <ul id="lists">
 	<% sorted_lists(@lists) do |list| %>
     <li class="<%= list_class(list) %>">
-			<a href="/lists/<%= list[:list_id] %>">
+			<a href="/lists/<%= list[:id] %>">
 			  <h2><%= list[:name] %> </h2>
-			  <p><%= todos_remaining_count(list) %>/<%= todos_count(list) %></p>
+			  <p><%= list[:todos_remaining_count] %>/<%= list[:todos_count] %></p>
 			</a>
 		</li>
 	<% end %>
