@@ -8,6 +8,7 @@ configure do
 	enable :sessions
 	set :session_secret, 'secret'
 	set :erb, :escape_html => true
+  # set :database, ENV['DATABASE_URL']
 end 
 
 configure(:development) do
